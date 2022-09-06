@@ -15,7 +15,7 @@ name: AutoBuildOpenwrt-x86-64-docker
 
 on:
   schedule:
-    - cron: "21 19 * * 1"
+    - cron: "21 19 * * 7"
   watch:
     types: started
   repository_dispatch:
@@ -218,7 +218,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.REMOVE_OLD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 10
+        keep_latest: 5
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
