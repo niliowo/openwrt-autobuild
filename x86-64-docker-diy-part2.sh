@@ -12,9 +12,9 @@
 #
 
 # Sinicize Compiler author infomation
-#sed -i "5i \\\nmsgid \"Compiler author\"\nmsgstr \"编译作者\"" feeds/luci/modules/luci-base/po/zh-cn/base.po
+#sed -i "5i \\\nmsgid \"Author HomePage\"\nmsgstr \"作者主页\"" feeds/luci/modules/luci-base/po/zh-cn/base.po
 
-sed -i "5i \\\nmsgid \"Compiler author\"\nmsgstr \"编译作者\"" feeds/luci/modules/luci-base/po/zh-cn/base.po
+sed -i "5i \\\nmsgid \"Author HomePage\"\nmsgstr \"作者主页\"" feeds/luci/modules/luci-base/po/zh-cn/base.po
 
 # Modify the default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-neobird/g' feeds/luci/collections/luci/Makefile
