@@ -14,8 +14,8 @@
 name: AutoBuildOpenwrt-x86-64-docker
 
 on:
-#  schedule:
-#    - cron: "21 19 * * 0"
+  schedule:
+    - cron: "21 19 * * 0"
   watch:
     types: started
   repository_dispatch:
