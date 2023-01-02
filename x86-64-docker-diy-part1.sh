@@ -19,18 +19,34 @@
 sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 
 # Modify the Compiler author information
-#sed -i "751i \\\t\t<tr><td width=\"33%\"><%:Compiler author%></td><td>nili\tQQ:1791356563</td></tr>" package/lean/autocore/files/x86/index.htm
-#sed -i "742i \\\t\t<tr><td width=\"33%\"><%:Compiler author%></td><td>nili\tQQ:1791356563</td></tr>" package/lean/autocore/files/arm/index.htm
+#sed -i "751i \\\t\t<tr><td width=\"33%\"><%:Author HomePage%></td><td>https://hexo.niliovo.top</td></tr>" package/lean/autocore/files/x86/index.htm
+#sed -i "742i \\\t\t<tr><td width=\"33%\"><%:Author HomePage%></td><td>https://hexo.niliovo.top</td></tr>" package/lean/autocore/files/arm/index.htm
 
-sed -i "751i \\\t\t<tr><td width=\"33%\"><%:Compiler author%></td><td>nili\tQQ:1791356563</td></tr>" package/lean/autocore/files/x86/index.htm
-sed -i "742i \\\t\t<tr><td width=\"33%\"><%:Compiler author%></td><td>nili\tQQ:1791356563</td></tr>" package/lean/autocore/files/arm/index.htm
+sed -i "751i \\\t\t<tr><td width=\"33%\"><%:Author HomePage%></td><td>https://hexo.niliovo.top</td></tr>" package/lean/autocore/files/x86/index.htm
+sed -i "742i \\\t\t<tr><td width=\"33%\"><%:Author HomePage%></td><td>https://hexo.niliovo.top</td></tr>" package/lean/autocore/files/arm/index.htm
 
 # Modify the login page banner information
-#sed -i '1,9d' package/base-files/files/etc/banner
-#sed -i "1i \\\nNNNNNNNN        NNNNNNNNIIIIIIIIIILLLLLLLLLLL             IIIIIIIIII\nN:::::::N       N::::::NI::::::::IL:::::::::L             I::::::::I\nN::::::::N      N::::::NI::::::::IL:::::::::L             I::::::::I\nN:::::::::N     N::::::NII::::::IILL:::::::LL             II::::::II\nN::::::::::N    N::::::N  I::::I    L:::::L                 I::::I  \nN:::::::::::N   N::::::N  I::::I    L:::::L                 I::::I  \nN:::::::N::::N  N::::::N  I::::I    L:::::L                 I::::I  \nN::::::N N::::N N::::::N  I::::I    L:::::L                 I::::I  \nN::::::N  N::::N:::::::N  I::::I    L:::::L                 I::::I  \nN::::::N   N:::::::::::N  I::::I    L:::::L                 I::::I  \nN::::::N    N::::::::::N  I::::I    L:::::L                 I::::I  \nN::::::N     N:::::::::N  I::::I    L:::::L         LLLLLL  I::::I  \nN::::::N      N::::::::NII::::::IILL:::::::LLLLLLLLL:::::LII::::::II\nN::::::N       N:::::::NI::::::::IL::::::::::::::::::::::LI::::::::I\nN::::::N        N::::::NI::::::::IL::::::::::::::::::::::LI::::::::I\nNNNNNNNN         NNNNNNNIIIIIIIIIILLLLLLLLLLLLLLLLLLLLLLLLIIIIIIIIII\n\n%D %V, %C, Power By Nili, QQ:1791356563\n" package/base-files/files/etc/banner
+echo "
+NNNNNNNN        NNNNNNNNIIIIIIIIIILLLLLLLLLLL             IIIIIIIIII
+N:::::::N       N::::::NI::::::::IL:::::::::L             I::::::::I
+N::::::::N      N::::::NI::::::::IL:::::::::L             I::::::::I
+N:::::::::N     N::::::NII::::::IILL:::::::LL             II::::::II
+N::::::::::N    N::::::N  I::::I    L:::::L                 I::::I  
+N:::::::::::N   N::::::N  I::::I    L:::::L                 I::::I  
+N:::::::N::::N  N::::::N  I::::I    L:::::L                 I::::I  
+N::::::N N::::N N::::::N  I::::I    L:::::L                 I::::I  
+N::::::N  N::::N:::::::N  I::::I    L:::::L                 I::::I  
+N::::::N   N:::::::::::N  I::::I    L:::::L                 I::::I  
+N::::::N    N::::::::::N  I::::I    L:::::L                 I::::I  
+N::::::N     N:::::::::N  I::::I    L:::::L         LLLLLL  I::::I  
+N::::::N      N::::::::NII::::::IILL:::::::LLLLLLLLL:::::LII::::::II
+N::::::N       N:::::::NI::::::::IL::::::::::::::::::::::LI::::::::I
+N::::::N        N::::::NI::::::::IL::::::::::::::::::::::LI::::::::I
+NNNNNNNN         NNNNNNNIIIIIIIIIILLLLLLLLLLLLLLLLLLLLLLLLIIIIIIIIII
 
-sed -i '1,9d' package/base-files/files/etc/banner
-sed -i "1i \\\nNNNNNNNN        NNNNNNNNIIIIIIIIIILLLLLLLLLLL             IIIIIIIIII\nN:::::::N       N::::::NI::::::::IL:::::::::L             I::::::::I\nN::::::::N      N::::::NI::::::::IL:::::::::L             I::::::::I\nN:::::::::N     N::::::NII::::::IILL:::::::LL             II::::::II\nN::::::::::N    N::::::N  I::::I    L:::::L                 I::::I  \nN:::::::::::N   N::::::N  I::::I    L:::::L                 I::::I  \nN:::::::N::::N  N::::::N  I::::I    L:::::L                 I::::I  \nN::::::N N::::N N::::::N  I::::I    L:::::L                 I::::I  \nN::::::N  N::::N:::::::N  I::::I    L:::::L                 I::::I  \nN::::::N   N:::::::::::N  I::::I    L:::::L                 I::::I  \nN::::::N    N::::::::::N  I::::I    L:::::L                 I::::I  \nN::::::N     N:::::::::N  I::::I    L:::::L         LLLLLL  I::::I  \nN::::::N      N::::::::NII::::::IILL:::::::LLLLLLLLL:::::LII::::::II\nN::::::N       N:::::::NI::::::::IL::::::::::::::::::::::LI::::::::I\nN::::::N        N::::::NI::::::::IL::::::::::::::::::::::LI::::::::I\nNNNNNNNN         NNNNNNNIIIIIIIIIILLLLLLLLLLLLLLLLLLLLLLLLIIIIIIIIII\n\n%D %V, %C, Power By Nili, QQ:1791356563\n" package/base-files/files/etc/banner
+%D %V, %C, Power By Nili
+HomePage https://hexo.niliovo.top
+" > package/base-files/files/etc/banner
 
 # Add third-party plugin libraries
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
