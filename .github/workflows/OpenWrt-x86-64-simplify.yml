@@ -11,7 +11,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: AutoBuildOpenwrt-x86-64-docker
+name: Openwrt-x86-64-simplify
 
 on:
   schedule:
@@ -30,9 +30,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: x86-64-docker.config
-  DIY_P1_SH: x86-64-docker-diy-part1.sh
-  DIY_P2_SH: x86-64-docker-diy-part2.sh
+  CONFIG_FILE: x86-64-simplify.config
+  DIY_P1_SH: x86-64-diy-part1.sh
+  DIY_P2_SH: x86-64-diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_WETRANSFER: true
